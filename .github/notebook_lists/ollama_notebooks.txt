@@ -1,0 +1,8 @@
+# Notebooks to test
+notebooks/Function_Calling_Agent.ipynb
+notebooks/ReAct_Agent.ipynb
+notebooks/Route_and_Solve_Agent.ipynb
+notebooks/ToolRAG_Agent.ipynb
+
+# Too many conversation turns for ibm/granite4:micro
+# notebooks/Plan_Solve_Agent.ipynb

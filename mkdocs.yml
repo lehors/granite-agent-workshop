@@ -1,0 +1,113 @@
+# Project information
+site_name: Granite Agent Workshop
+site_url: https://ibm-granite-community.github.io/granite-agent-workshop
+site_author: IBM Research
+
+# Repository
+repo_name: granite-agent-workshop
+repo_url: https://github.com/ibm-granite-community/granite-agent-workshop
+edit_uri: edit/main/docs
+
+# Navigation
+nav:
+  - Welcome:
+    - About the workshop: README.md
+  - Workshop:
+    - Lab 0. Pre-work: pre-work/README.md
+    - Lab 1. Function Calling Agent: lab-1/README.md
+    - Lab 2. Plan-and-Solve Agent: lab-2/README.md
+    - Lab 3. Route-and-Solve Agent: lab-3/README.md
+    - Lab 4. ToolRAG Agent: lab-4/README.md
+    - Lab 5. ReAct Agent: lab-5/README.md
+  - References:
+    - Building Agents with Granite - From Prototype to Production: https://github.com/ibm-granite-community/granite-agent-cookbook/blob/main/building_agents.md
+
+
+
+## DO NOT CHANGE BELOW THIS LINE
+
+# Copyright
+copyright: Copyright &copy; 2026- IBM Research
+
+# Theme
+theme:
+  name: material
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  icon:
+    logo: material/library
+  logo: images/ibm-blue-background.png
+  favicon: images/favicon.ico
+  features:
+    - navigation.tabs
+    - navigation.footer
+    #- navigation.instant
+    - content.code.copy
+  palette:
+    scheme: default
+    primary: blue
+    accent: blue
+
+extra_css:
+  - "data:text/css,.md-header__button.md-logo img,.md-header__button.md-logo svg{height:2.5rem;width:auto;}.md-header__title{font-size:1.2rem;font-weight:500;}"
+
+# Plugins
+plugins:
+  - search
+  - social
+  - macros:
+      on_undefined: strict
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ibm
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ibmdeveloper
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/ibm/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/user/developerworks
+    - icon: fontawesome/brands/dev
+      link: https://dev.to/ibmdeveloper
+  colab_url: https://colab.research.google.com/github/ibm-granite-community/granite-agent-workshop
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
