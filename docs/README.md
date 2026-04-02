@@ -24,8 +24,8 @@ A function calling agent is an AI system that can intelligently select and invok
 
 ### Plan-and-Solve Agents
 
-Plan-and-Solve Agents consist of a planner node and function calling node. The planner node is responsible for considering the query, coming up with reasoning and generating a complete plan for execution, selecting the tools to use and their ordering.
-The output of the planner node is passed to the FC Node which loads up the tool calls, assisted by the LLM to set the tool call parameters.
+Plan-and-Solve Agents consist of a planner node and Function Calling (FC) node. The planner node is responsible for considering the query, coming up with reasoning and generating a complete plan for execution, selecting the tools to use and their ordering.
+The output of the planner node is passed to the FC node which loads up the tool calls, assisted by the LLM to set the tool call parameters.
 Once the FC node has executed the plan, the agent may or may not invoke the planner node again to determine if some additional steps are required based on the tool results.
 
 ### Route-and-Solve Agents

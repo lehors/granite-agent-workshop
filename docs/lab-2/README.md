@@ -7,9 +7,9 @@ notebook: notebooks/Plan_Solve_Agent.ipynb
 
 # Plan-and-Solve Agent
 
-Plan-and-Solve Agents consist of a planner node and function calling node. The planner node is responsible for considering the query, coming up with reasoning and generating a complete plan for execution, selecting the tools to use and their ordering.
+Plan-and-Solve Agents consist of a planner node and Function Calling (FC) node. The planner node is responsible for considering the query, coming up with reasoning and generating a complete plan for execution, selecting the tools to use and their ordering.
 
-The output of the planner node is passed to the FC Node which loads up the tool calls, assisted by the LLM to set the tool call parameters.
+The output of the planner node is passed to the FC node which loads up the tool calls, assisted by the LLM to set the tool call parameters.
 
 Once the FC node has executed the plan, the agent may or may not invoke the planner node again to determine if some additional steps are required based on the tool results.
 
@@ -33,7 +33,7 @@ This approach is useful when you have tools or an agent setup that requires cust
 
 Also this setting can empower use cases where there are longer reasoning traces or more steps required then simpler agents with target use cases only needing a few tools to be executed per query.
 
-In production settings, this approach can offer a more simplified human-in-the-loop pattern by allowing the user to validate generated plans before execution.
+In production settings, this approach can offer a simplified human-in-the-loop pattern by allowing the user to validate generated plans before execution.
 
 ## Prerequisites
 
